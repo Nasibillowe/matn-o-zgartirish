@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Oddiy Veb-Sahifa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        h1 {
+            color: #007bff;
+        }
+
+        p {
+            color: #333;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Assalomu alykum</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et officia provident, vero, deserunt ullam iusto, dicta veniam dignissimos eos fugit omnis! Unde at neque eveniet quos deserunt error dolores cum.</p>
+
+    <button onclick="changeText()">Matn o'zgartirish</button>
+
+    <script>
+        function changeText() {
+            document.getElementsByTagName("p")[0].innerHTML = "ko'rdimi matn o'zgaradi  yana bitta reflesh ber nimaa bo'lar ekan?";
+        }
+        document.addEventListener('contextmenu', function (p) {
+    p.preventDefault();
+    alert("ko'd ni ko'chirma o'zing yoz !!!");
+});
+    </script>
+</body>
+<script src="./js/main.js"></script>
+</html>
